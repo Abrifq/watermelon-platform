@@ -94,8 +94,6 @@ export default function QueueView() {
     const [newItemOrigin, setNewItemOrigin] = useState("")
     const [newItemPriority, setNewItemPriority] = useState("Moderate")
 
-    const currentStatus = STATUSES.find(s => s.label === status) ?? STATUSES[0]
-    const currentPriority = PRIORITIES.find(p => p.label === priority) ?? PRIORITIES[1]
 
     return (
         <div className="flex flex-col min-h-full lg:h-full bg-white dark:bg-neutral-950 font-mono p-2.5 gap-2.5">
