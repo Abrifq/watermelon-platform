@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect, type FC, type ChangeEvent } from 'react';
+import { useState, useRef, useEffect, useCallback, type FC, type ChangeEvent } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ChevronDown, Check } from 'lucide-react';
 
@@ -30,7 +30,7 @@ const FlagIcon: FC<FlagIconProps> = ({ countryCode, emoji }) => {
   const [imgError, setImgError] = useState(false);
 
   useEffect(() => {
-    setImgError(false);
+    requestAnimationFrame(() => setImgError(false));
   }, [countryCode]);
 
   if (!countryCode) return <span className="text-lg sm:text-xl">{emoji}</span>;
@@ -91,9 +91,8 @@ const Dropdown: FC<DropdownProps> = ({ selected, onSelect, currencies }) => {
           {selected.code}
         </span>
         <ChevronDown
-          className={`h-4 w-4 text-gray-400 transition-transform sm:h-5 sm:w-5 ${
-            isOpen ? 'rotate-180' : ''
-          }`}
+          className={`h-4 w-4 text-gray-400 transition-transform sm:h-5 sm:w-5 ${isOpen ? 'rotate-180' : ''
+            }`}
         />
       </button>
 
@@ -227,16 +226,16 @@ export const SwapCurrencyCard: FC<SwapCurrencyCardProps> = ({
   const [fromAmount, setFromAmount] = useState(defaultAmount);
   const [toAmount, setToAmount] = useState('');
 
-  useEffect(() => {
-    setToAmount(convert(fromAmount, fromCurrency, toCurrency));
-  }, []);
-
-  const convert = (amount: string, from: Currency, to: Currency): string => {
+  const convert = useCallback((amount: string, from: Currency, to: Currency): string => {
     const val = parseFloat(amount);
     if (isNaN(val)) return '';
     const usd = val / from.rate;
     return (usd * to.rate).toFixed(2);
-  };
+  }, []);
+
+  useEffect(() => {
+    requestAnimationFrame(() => setToAmount(convert(fromAmount, fromCurrency, toCurrency)));
+  }, [convert, fromAmount, fromCurrency, toCurrency]);
 
   const handleFromChange = (e: ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;

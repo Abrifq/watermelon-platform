@@ -133,7 +133,7 @@ export const CommandSearch: FC<Props> = ({ items = DEFAULT_ITEMS }) => {
   }, [query, items]);
 
   useEffect(() => {
-    setActiveIndex(0);
+    requestAnimationFrame(() => setActiveIndex(0));
   }, [query]);
 
   const sections = useMemo(() => {

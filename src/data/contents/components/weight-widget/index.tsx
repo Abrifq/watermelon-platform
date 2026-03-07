@@ -35,7 +35,7 @@ export const WeightWidget: React.FC<WeightWidgetProps> = ({
   const [displayValue, setDisplayValue] = useState(initialValue);
 
   useEffect(() => {
-    setMounted(true);
+    requestAnimationFrame(() => setMounted(true));
   }, []);
 
   useEffect(() => {

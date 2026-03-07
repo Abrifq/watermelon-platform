@@ -49,7 +49,7 @@ export const TranscribeVoiceMessage: React.FC<VoiceMessageProps> = ({
     frameId = requestAnimationFrame(tick);
 
     return () => cancelAnimationFrame(frameId);
-  }, [isPlaying, initialDuration]);
+  }, [isPlaying, initialDuration, currentTime]);
 
   const handlePlayToggle = () => {
     if (currentTime >= initialDuration) setCurrentTime(0);
@@ -77,11 +77,10 @@ export const TranscribeVoiceMessage: React.FC<VoiceMessageProps> = ({
         <button
           title="Transcription"
           onClick={() => setShowTranscription(!showTranscription)}
-          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 transition-all duration-300 sm:h-16 sm:w-16 ${
-            showTranscription
+          className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-2 transition-all duration-300 sm:h-16 sm:w-16 ${showTranscription
               ? 'border-neutral-200 bg-transparent text-neutral-900 dark:border-white/20 dark:text-white'
               : 'border-transparent bg-neutral-100 text-neutral-900 hover:bg-neutral-200 dark:bg-neutral-800 dark:text-white dark:hover:bg-neutral-700'
-          }`}
+            }`}
         >
           <TbMessageFilled size={22} className="sm:hidden" />
           <TbMessageFilled size={28} className="hidden sm:block" />

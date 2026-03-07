@@ -74,7 +74,7 @@ export const RadialCarousel: React.FC<RadialCarouselProps> = ({
 
   const toggleExpand = useCallback(() => {
     setIsExpanded((prev) => !prev);
-  }, [isExpanded]);
+  }, []);
 
   const handleItemClick = (index: number) => {
     setActiveIndex(index);
@@ -93,7 +93,7 @@ export const RadialCarousel: React.FC<RadialCarouselProps> = ({
           <motion.div
             key="center-view"
             layout
-            transition={{ type: 'spring', bounce: 0.15, duration: 0.15}}
+            transition={{ type: 'spring', bounce: 0.15, duration: 0.15 }}
             className="relative z-10"
           >
             <motion.div
