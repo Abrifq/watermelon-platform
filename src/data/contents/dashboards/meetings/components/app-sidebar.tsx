@@ -160,7 +160,7 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar
       {...props}
-      className="relative h-full border-none! transition-all duration-200 **:data-[slot=sidebar-container]:relative **:data-[slot=sidebar-container]:h-full **:data-[slot=sidebar-container]:w-(--sidebar-width) **:data-[slot=sidebar-inner]:h-full **:data-[slot=sidebar-inner]:rounded-xl **:data-[slot=sidebar-inner]:bg-neutral-200/50 **:data-[slot=sidebar-inner]:dark:bg-neutral-900 **:data-[slot=sidebar-gap]:hidden"
+      className="relative h-full border-none! **:data-[slot=sidebar-container]:relative **:data-[slot=sidebar-container]:h-full **:data-[slot=sidebar-container]:w-(--sidebar-width) **:data-[slot=sidebar-inner]:h-full **:data-[slot=sidebar-inner]:rounded-xl **:data-[slot=sidebar-inner]:bg-neutral-200/50 **:data-[slot=sidebar-inner]:dark:bg-neutral-900 **:data-[slot=sidebar-gap]:hidden"
     >
       <SidebarHeader className="h-14">
         <div className="flex items-center justify-between px-2 pt-1">
