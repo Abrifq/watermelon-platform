@@ -1,5 +1,5 @@
 'use client';
-import { useMemo } from 'react';
+import { useState } from 'react';
 
 import {
   Table,
@@ -57,9 +57,8 @@ function WinProbabilityBar({ value }: { value: number }) {
 }
 
 function ActivityTrend() {
-  const heights = useMemo(
-    () => Array.from({ length: 12 }).map(() => `${Math.random() * 100}%`),
-    [],
+  const [heights] = useState(() =>
+    Array.from({ length: 12 }).map(() => `${Math.random() * 100}%`),
   );
 
   return (
