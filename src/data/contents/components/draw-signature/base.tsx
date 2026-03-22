@@ -38,9 +38,9 @@ export const DrawSignatureComponent: React.FC<DrawSignatureComponentProps> = ({
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setMounted(true);
   }, []);
-
   useEffect(() => {
     onStepChange?.(step);
   }, [step, onStepChange]);
@@ -133,7 +133,7 @@ export const DrawSignatureComponent: React.FC<DrawSignatureComponentProps> = ({
           height: bounds.height > 0 ? bounds.height : 'auto',
         }}
         className={cn(
-          'theme-injected relative z-10 flex items-center justify-center  rounded-lg overflow-hidden border-2 border-dashed border-transparent transition-colors duration-400 ease-out',
+          'theme-injected relative z-10 flex items-center justify-center overflow-hidden rounded-lg border-2 border-dashed border-transparent transition-colors duration-400 ease-out',
           step === 'drawing' && 'border-border',
         )}
       >
