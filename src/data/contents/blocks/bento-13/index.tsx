@@ -1,9 +1,8 @@
-import React, { useMemo, useState } from 'react';
+import {useState } from 'react';
 import { cn } from '@/lib/utils';
 import {
   motion,
   MotionConfig,
-  type SpringOptions,
   useSpring,
   useTransform,
   type Variants,

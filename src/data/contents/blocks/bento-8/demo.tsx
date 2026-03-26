@@ -1,4 +1,4 @@
-import React from 'react';
+
 import BentoGrid8 from '.';
 
 export default function BentoGrid8Demo() {

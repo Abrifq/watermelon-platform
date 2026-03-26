@@ -1,5 +1,5 @@
 'use client';
-import React, { useMemo, useState } from 'react';
+import React, {  useState } from 'react';
 import { motion } from 'framer-motion';
 import { FiMail } from 'react-icons/fi';
 import { Check, ChevronRight } from 'lucide-react';

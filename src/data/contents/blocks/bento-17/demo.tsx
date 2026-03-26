@@ -1,4 +1,4 @@
-import React from 'react';
+
 import BentoGrid17 from '.';
 
 export default function BentoGrid17Demo() {
