@@ -9,8 +9,6 @@ import { FaUserAlt } from 'react-icons/fa';
 import { FaGift } from 'react-icons/fa';
 import { RiMessage2Fill } from 'react-icons/ri';
 
-
-
 type IconProps = {
   className?: string;
 };
@@ -76,7 +74,7 @@ const PatternIconWide = ({ className }: IconProps) => {
     </svg>
   );
 };
- const PatternIconWide2 = ({ className }: IconProps) => {
+const PatternIconWide2 = ({ className }: IconProps) => {
   return (
     <svg
       viewBox="0 0 37 36"
@@ -108,7 +106,7 @@ const PatternIconWide = ({ className }: IconProps) => {
     </svg>
   );
 };
- const PatternIconWide3 = ({ className }: IconProps) => {
+const PatternIconWide3 = ({ className }: IconProps) => {
   return (
     <svg
       viewBox="0 0 37 36"
@@ -140,7 +138,6 @@ const PatternIconWide = ({ className }: IconProps) => {
     </svg>
   );
 };
-
 
 export const PatternIconWide4 = ({ className }: IconProps) => {
   return (
@@ -175,44 +172,14 @@ export const PatternIconWide4 = ({ className }: IconProps) => {
   );
 };
 
-// type Props = {
-//   className?: string;
-// };
-
-//  const PatternIcon = ({ className }: Props) => {
-//   return (
-//     <svg
-//       viewBox="0 0 37 36"
-//       xmlns="http://www.w3.org/2000/svg"
-//       className={className}
-//     >
-//       <defs>
-//         <pattern
-//           id="pattern0"
-//           patternContentUnits="objectBoundingBox"
-//           width="1"
-//           height="1"
-//         >
-//           <use
-//             href="#image0"
-//             transform="matrix(0.00972973 0 0 0.01 0.0135135 0)"
-//           />
-//         </pattern>
-
-//         <image
-//           id="image0"
-//           width="100"
-//           height="100"
-//           preserveAspectRatio="none"
-//           href="data:image/png;base64,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"
-//         />
-//       </defs>
-
-//       <rect width="37" height="36" fill="url(#pattern0)" />
-//     </svg>
-//   );
-// };
-const icons = [FaHeart,IoSearch,FaUserAlt,FaGift,RiMessage2Fill,PatternIconLarge]
+const icons = [
+  FaHeart,
+  IoSearch,
+  FaUserAlt,
+  FaGift,
+  RiMessage2Fill,
+  PatternIconLarge,
+];
 
 const container = {
   hidden: { opacity: 0 },
@@ -254,7 +221,7 @@ export default function BentoGrid10() {
             name="Alex"
             rating="4.7"
             job="Handyman"
-            src='https://assets.watermelon.sh/alex.png'
+            src="https://assets.watermelon.sh/alex.png"
           />
           <WorkerCard
             name="Sam"
@@ -299,7 +266,7 @@ export default function BentoGrid10() {
         </div>
       </BentoItem>
 
-      <BentoItem className="row-span-3 flex flex-col gap-1 bg-[#1149AD] p-4 ">
+      <BentoItem className="row-span-3 flex flex-col gap-1 bg-[#1149AD] p-4">
         <TaskTag label="Mover" count="13" Icon={PatternIconWide4} />
         <TaskTag label="Gardener" count="13" Icon={PatternIconWide2} />
         <TaskTag label="Chef" count="13" Icon={PatternIconWide3} />
@@ -325,7 +292,13 @@ export default function BentoGrid10() {
   );
 }
 
-function BentoItem({ children, className }: { children?: React.ReactNode; className: string }) {
+function BentoItem({
+  children,
+  className,
+}: {
+  children?: React.ReactNode;
+  className: string;
+}) {
   return (
     <motion.div
       variants={item}
@@ -342,11 +315,21 @@ function BentoItem({ children, className }: { children?: React.ReactNode; classN
   );
 }
 
-function WorkerCard({ name, rating, job, src }: { name: string; rating: string; job: string; src: string }) {
+function WorkerCard({
+  name,
+  rating,
+  job,
+  src,
+}: {
+  name: string;
+  rating: string;
+  job: string;
+  src: string;
+}) {
   return (
     <div className="flex min-h-[150px] flex-1 flex-col items-center justify-end rounded-xl bg-[#D9D9D9] p-3 sm:min-h-0 md:p-4">
       <div>
-        <img src={src} alt="avatar" className=" size-40 rounded-md" />
+        <img src={src} alt="avatar" className="size-40 rounded-md" />
       </div>
       <div className="mb-3 md:mb-5">
         <h4 className="text-3xl leading-none font-black text-[#171C27] md:text-6xl">
@@ -376,7 +359,7 @@ function TaskTag({
 }) {
   return (
     <div className="flex items-center justify-between rounded-lg border border-white/10 bg-[#171C27]/70 p-2">
-      <div className='flex-1 flex items-center gap-1 '>
+      <div className="flex flex-1 items-center gap-1">
         <Icon className="size-8 shrink-0 text-white" />
         <span className="text-xl font-bold text-white">{label}</span>
       </div>
