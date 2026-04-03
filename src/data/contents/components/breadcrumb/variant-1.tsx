@@ -28,7 +28,7 @@ const segments: readonly BreadcrumbSegment[] = [
 const Breadcrumb1 = () => {
   return (
     <Breadcrumb>
-      <BreadcrumbList className="border-border/70 bg-background rounded-full border px-3 py-1.5 shadow-sm w-fit">
+      <BreadcrumbList className="border-border/70 bg-background w-full max-w-full justify-center rounded-2xl border px-2 py-1.5 shadow-sm sm:w-fit sm:justify-start sm:rounded-full sm:px-3">
         {segments.map((segment, index) => (
           <BreadcrumbItem key={segment.label}>
             {'href' in segment ? (

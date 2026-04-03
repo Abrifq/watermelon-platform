@@ -25,7 +25,7 @@ const group: CollapsibleGroup = {
 
 const Collapsible1 = () => {
   return (
-    <Collapsible className="border-border/70 bg-background flex w-full max-w-[350px] flex-col gap-2 rounded-lg border p-2 shadow-sm">
+    <Collapsible className="flex w-full max-w-[350px] flex-col gap-2 p-2">
       <div className="flex items-center justify-between gap-4 px-2 py-1">
         <div className="text-sm font-semibold">{group.title}</div>
         <CollapsibleTrigger>

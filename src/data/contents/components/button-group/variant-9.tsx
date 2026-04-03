@@ -27,12 +27,12 @@ const ButtonGroup9 = () => {
             key={action.label}
             variant="outline"
             className={[
-              'border-border/70 bg-background text-foreground hover:[&_svg]:text-muted-foreground gap-2 rounded-none px-3 shadow-none focus-visible:z-10',
+              'border-border/70 bg-background text-foreground hover:[&_svg]:text-muted-foreground h-7 gap-1.5 rounded-none px-2.5 text-[0.8rem] shadow-none focus-visible:z-10 sm:h-8 sm:gap-2 sm:px-3 sm:text-sm',
               isFirst ? 'rounded-l-full' : '',
               isLast ? 'rounded-r-full' : '',
             ].join(' ')}
           >
-            <Icon className="text-muted-foreground size-4 transition-colors" />
+            <Icon className="text-muted-foreground size-3.5 transition-colors sm:size-4" />
             {action.label}
           </Button>
         );

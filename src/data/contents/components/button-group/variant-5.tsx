@@ -20,30 +20,30 @@ type SocialAction = {
 const actions: readonly SocialAction[] = [
   {
     href: '#',
-    hoverClassName: 'hover:!bg-[#0f0f10]/6',
+    hoverClassName: 'hover:!bg-[#2563eb]/10',
     icon: TerminalSquareIcon,
-    iconClassName: 'stroke-[#171515]',
+    iconClassName: 'stroke-[#2563eb]',
     label: 'Code',
   },
   {
     href: '#',
-    hoverClassName: 'hover:!bg-[#0a66c2]/10',
+    hoverClassName: 'hover:!bg-[#16a34a]/10',
     icon: BriefcaseIcon,
-    iconClassName: 'stroke-[#0a66c2]',
+    iconClassName: 'stroke-[#16a34a]',
     label: 'Work',
   },
   {
     href: '#',
-    hoverClassName: 'hover:!bg-[#f24e1e]/10',
+    hoverClassName: 'hover:!bg-[#dc2626]/10',
     icon: LayoutGridIcon,
-    iconClassName: 'stroke-[#f24e1e]',
+    iconClassName: 'stroke-[#dc2626]',
     label: 'Library',
   },
   {
     href: '#',
-    hoverClassName: 'hover:!bg-[#111827]/8',
+    hoverClassName: 'hover:!bg-[#ca8a04]/10',
     icon: BookOpenIcon,
-    iconClassName: 'stroke-[#111827]',
+    iconClassName: 'stroke-[#ca8a04]',
     label: 'Docs',
   },
 ] as const;

@@ -122,7 +122,7 @@ const FolderTree = ({ item, level }: FolderTreeProps) => {
 
 const Collapsible2 = () => {
   return (
-    <div className="border-border/70 bg-background flex w-full max-w-56 flex-col gap-2 rounded-lg border p-2 shadow-sm">
+    <div className="flex w-full max-w-56 flex-col gap-2 p-2">
       {fileTree.map((item) => (
         <FileTree key={item.name} item={item} level={0} />
       ))}

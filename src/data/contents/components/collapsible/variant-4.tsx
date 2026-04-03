@@ -84,7 +84,7 @@ const UserRow = ({ user }: UserRowProps) => {
     <Collapsible
       open={open}
       onOpenChange={setOpen}
-      className="border-border/70 bg-background rounded-lg border p-3 shadow-sm"
+      className="p-3"
     >
       <CollapsibleTrigger className="flex w-full items-center justify-between gap-4">
         <div className="flex items-center gap-3">

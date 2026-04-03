@@ -52,7 +52,7 @@ const Card13 = () => {
           . {testimonial.quoteEnd}
         </p>
       </CardContent>
-      <CardFooter className="border-border/60 justify-between gap-3 border-t pt-5 max-sm:flex-col max-sm:items-stretch">
+      <CardFooter className="border-border/60 rounded-none justify-between gap-3 border-t pt-5 max-sm:flex-col max-sm:items-stretch">
         <div className="flex items-center gap-3">
           <Avatar className="ring-ring ring-2">
             <AvatarImage

@@ -64,7 +64,7 @@ const Collapsible3 = () => {
     <Collapsible
       open={open}
       onOpenChange={setOpen}
-      className="border-border/70 bg-background flex w-full max-w-[350px] flex-col items-start gap-4 rounded-lg border p-4 shadow-sm"
+      className="flex w-full max-w-[350px] flex-col items-start gap-4 p-4"
     >
       <div className="font-medium">Today&apos;s team progress</div>
       <ul className="flex w-full flex-col gap-3">

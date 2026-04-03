@@ -36,13 +36,13 @@ const Card6 = () => {
         />
       </CardContent>
       <div className="sm:min-w-60">
-        <CardHeader className="space-y-1 pt-6">
+        <CardHeader className="space-y-1 py-6">
           <CardTitle>{mediaCard.title}</CardTitle>
           <CardDescription className="leading-6">
             {mediaCard.description}
           </CardDescription>
         </CardHeader>
-        <CardFooter className="gap-3 py-6">
+        <CardFooter className="gap-3 py-4 rounded-none">
           <Button className="bg-sky-600 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.35),inset_0_-2px_4px_rgba(0,0,0,0.18),0_6px_14px_rgba(14,165,233,0.22)] hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-400">
             {mediaCard.ctaLabel}
           </Button>

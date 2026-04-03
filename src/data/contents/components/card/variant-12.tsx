@@ -50,17 +50,17 @@ const Card12 = () => {
           alt={product.imageAlt}
           className="size-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-black/10 via-transparent to-transparent" />
       </div>
       <Button
         size="icon"
         onClick={() => setLiked((current) => !current)}
-        className="text-foreground absolute top-4 right-4 rounded-full bg-white/80 shadow-sm backdrop-blur-sm hover:bg-white"
+        className="absolute top-4 right-4 rounded-full border border-white/60 bg-white/85 text-slate-900 shadow-sm backdrop-blur-sm hover:bg-white dark:border-white/15 dark:bg-black/55 dark:text-slate-100 dark:hover:bg-black/70"
       >
         <HeartIcon
           className={cn(
             'size-4',
-            liked ? 'fill-destructive stroke-destructive' : 'stroke-foreground',
+            liked ? 'fill-destructive stroke-destructive' : 'stroke-current',
           )}
         />
         <span className="sr-only">Like</span>

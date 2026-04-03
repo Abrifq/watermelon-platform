@@ -29,21 +29,21 @@ const tabs: readonly CardTab[] = [
     label: 'Files',
     value: 'files',
     content:
-      'Browse shared assets, working drafts, and final exports collected for the project in one organized place.',
+      'Browse shared assets, working drafts, and final exports collected for the project in one organized place. Share your files seamlessly with the team.',
   },
 ] as const;
 
 const Card10 = () => {
   return (
-    <Card className="border-border/70 w-max bg-neutral-100 shadow-sm dark:bg-neutral-900">
+    <Card className="border-border/70 w-max bg-neutral-100 shadow-sm dark:bg-neutral-900 py-3">
       <CardContent className="px-2">
         <Tabs defaultValue={tabs[0].value} className="w-full max-w-sm">
-          <TabsList className="w-full justify-start gap-1 bg-transparent p-1 shadow-none">
+          <TabsList className="w-full justify-start gap-1 bg-transparent shadow-none">
             {tabs.map((tab) => (
               <TabsTrigger
                 key={tab.value}
                 value={tab.value}
-                className="text-muted-foreground dark:data-[state=active]:border-border dark:data-[state=active]:bg-background dark:data-[state=active]:text-foreground h-9 rounded-md border border-transparent bg-transparent px-4 data-[state=active]:border-slate-300 data-[state=active]:bg-slate-100 data-[state=active]:text-slate-950 data-[state=active]:shadow-sm"
+                className="text-muted-foreground dark:data-[state=active]:border-border dark:data-[state=active]:bg-background dark:data-[state=active]:text-foreground h-9 rounded-md border border-transparent bg-transparent px-2 data-[state=active]:border-slate-300 data-[state=active]:bg-slate-100 data-[state=active]:text-slate-950 data-[state=active]:shadow-sm"
               >
                 {tab.label}
               </TabsTrigger>
@@ -51,7 +51,7 @@ const Card10 = () => {
           </TabsList>
           {tabs.map((tab) => (
             <TabsContent key={tab.value} value={tab.value}>
-              <p className="text-muted-foreground p-4 text-sm leading-6">
+              <p className="text-muted-foreground p-2 text-sm leading-6">
                 {tab.content}
               </p>
             </TabsContent>

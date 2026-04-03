@@ -22,20 +22,20 @@ const overlayCard: OverlayCard = {
 
 const Card7 = () => {
   return (
-    <Card className="relative max-w-md overflow-hidden border-0 py-0 shadow-sm">
+    <Card className="relative max-w-md overflow-hidden border-0 py-0 shadow-sm bg-black/50">
       <CardContent className="px-0">
         <img
           src={overlayCard.imageSrc}
           alt={overlayCard.imageAlt}
-          className="h-72 w-full object-cover"
+          className="h-72 w-full object-cover opacity-90"
         />
       </CardContent>
-      <div className="absolute inset-x-0 bottom-0 h-40 mask-[linear-gradient(to_top,black_50%,transparent_100%)] backdrop-blur-md" />
+      <div className="absolute overflow-hidden inset-x-0 bottom-0 h-40" />
       <div className="absolute inset-0 bg-linear-to-t from-black/60 via-black/20 to-transparent" />
       <div className="absolute inset-x-0 bottom-0 z-10">
         <CardHeader className="space-y-2 pb-4 text-white">
-          <CardTitle className="text-xl">{overlayCard.title}</CardTitle>
-          <p className="max-w-sm text-sm leading-5 text-white/80">
+          <CardTitle className="text-xl [text-shadow:0_2px_10px_rgba(0,0,0,0.55)]">{overlayCard.title}</CardTitle>
+          <p className="max-w-sm text-sm leading-5 text-white/80 [text-shadow:0_1px_6px_rgba(0,0,0,0.45)]">
             {overlayCard.description}
           </p>
         </CardHeader>
