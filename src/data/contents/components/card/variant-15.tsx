@@ -20,7 +20,7 @@ type GalleryCard = {
 const cards: readonly GalleryCard[] = [
   {
     description:
-      'A calm abstract study with soft light, layered curves, and a quieter palette for editorial layouts.',
+      'A calm abstract study with soft light, layered curves, and a quieter palette for editorial layouts and better readability.',
     imageAlt: 'Soft blue abstract composition',
     imageSrc: 'https://picsum.photos/seed/editorial-blue/1200/900',
     primaryAction: 'View Piece',
@@ -29,7 +29,7 @@ const cards: readonly GalleryCard[] = [
   },
   {
     description:
-      'Warm transitions and glowing orange tones create a softer gradient scene with a cinematic surface.',
+      'Warm transitions and glowing orange tones create a softer gradient scene with a cinematic surface and improved contrast.',
     imageAlt: 'Warm orange abstract composition',
     imageSrc: 'https://picsum.photos/seed/editorial-sunset/1200/900',
     primaryAction: 'View Piece',
@@ -68,7 +68,7 @@ const Card15 = () => {
               {card.description}
             </CardDescription>
           </CardHeader>
-          <CardFooter className="gap-3 max-sm:flex-col max-sm:items-stretch">
+          <CardFooter className="gap-3 max-sm:flex-col max-sm:items-stretch rounded-none">
             <Button className="bg-sky-600 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.35),inset_0_-2px_4px_rgba(0,0,0,0.18),0_8px_18px_rgba(14,165,233,0.24)] hover:bg-sky-700 dark:bg-sky-500 dark:hover:bg-sky-400">
               {card.primaryAction}
             </Button>
