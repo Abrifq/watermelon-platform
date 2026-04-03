@@ -3,4 +3,5 @@ export const category = {
   label: 'Alerts',
   description:
     'A component used to display important messages, notifications, or feedback to the user.',
+
 };

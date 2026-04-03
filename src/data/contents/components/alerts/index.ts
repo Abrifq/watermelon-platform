@@ -113,6 +113,7 @@ export const variants: UiVariant[] = [
     component: Alert7,
     cli: 'npx shadcn@latest add alert',
     code: code7,
+  
   },
   {
     id: 'alerts-08',
@@ -120,6 +121,7 @@ export const variants: UiVariant[] = [
     component: Alert8,
     cli: 'npx shadcn@latest add alert',
     code: code8,
+
   },
   {
     id: 'alerts-09',

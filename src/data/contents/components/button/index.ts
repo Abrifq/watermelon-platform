@@ -30,6 +30,14 @@ import Button27 from './variant-27';
 import Button28 from './variant-28';
 import Button29 from './variant-29';
 import Button30 from './variant-30';
+import Button31 from './variant-31';
+import Button32 from './variant-32';
+import Button33 from './variant-33';
+import Button34 from './variant-34';
+import Button35 from './variant-35'; 
+import Button36 from './variant-36';
+import Button37 from './variant-37';
+import Button38 from './variant-38';
 
 import code1 from './variant-1.tsx?raw';
 import code2 from './variant-2.tsx?raw';
@@ -61,6 +69,14 @@ import code27 from './variant-27.tsx?raw';
 import code28 from './variant-28.tsx?raw';
 import code29 from './variant-29.tsx?raw';
 import code30 from './variant-30.tsx?raw';
+import code31 from './variant-31.tsx?raw';
+import code32 from './variant-32.tsx?raw';
+import code33 from './variant-33.tsx?raw';
+import code34 from './variant-34.tsx?raw';
+import code35 from './variant-35.tsx?raw';
+import code36 from './variant-36.tsx?raw';
+import code37 from './variant-37.tsx?raw';  
+import code38 from './variant-38.tsx?raw';
 
 import type { UiVariant } from '@/data/components-registry';
 
@@ -274,6 +290,62 @@ export const variants: UiVariant[] = [
     component: Button30,
     cli: 'npx shadcn@latest add button',
     code: code30,
+  },
+  {
+    id: 'button-31',
+    title: 'Button 31',
+    component: Button31,
+    cli: 'npx shadcn@latest add button',
+    code: code31,
+  },
+  {
+    id: 'button-32',
+    title: 'Button 32',
+    component: Button32,
+    cli: 'npx shadcn@latest add button',
+    code: code32,
+  },
+  {
+    id: 'button-33',
+    title: 'Button 33',
+    component: Button33,
+    cli: 'npx shadcn@latest add button',
+    code: code33,
+  },
+  {
+    id: 'button-34',
+    title: 'Button 34',
+    component: Button34,
+    cli: 'npx shadcn@latest add button',
+    code: code34,
+  },
+  {
+    id: 'button-35',
+    title: 'Button 35',
+    component: Button35,
+    cli: 'npx shadcn@latest add button',
+    code: code35,
+  },
+  {
+    id: 'button-36',
+    title: 'Button 36',
+    component: Button36,
+    cli: 'npx shadcn@latest add button',
+    code: code36,
+  },
+  {
+    id: 'button-37',
+    title: 'Button 37',
+    component: Button37,
+    cli: 'npx shadcn@latest add button',
+    code: code37,
+  },
+  {
+    id: 'button-38',
+    title: 'Button 38',
+    component: Button38,
+    cli: 'npx shadcn@latest add button',
+    code: code38,
   },
 ];
 

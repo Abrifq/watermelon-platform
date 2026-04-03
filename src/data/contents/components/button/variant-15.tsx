@@ -3,8 +3,8 @@ import { IoCopy } from 'react-icons/io5';
 
 const Button15 = () => {
   return (
-    <div className="flex h-12 w-56 items-center overflow-hidden rounded-lg border px-1">
-      <p className="text-muted-foreground max-w-56 truncate overflow-hidden px-2.5 text-sm">
+    <div className="flex h-12  items-center overflow-hidden rounded-lg border px-1">
+      <p className="text-muted-foreground max-w-56 truncate overflow-hidden px-1 text-sm">
         https://watermelon-base-ui.com/
       </p>
       <Button

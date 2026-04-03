@@ -22,6 +22,8 @@ import Badge19 from './variant-19';
 import Badge20 from './variant-20';
 import Badge21 from './variant-21';
 import Badge22 from './variant-22';
+import Badge23 from './variant-23';
+import Badge24 from './variant-24';
 
 import code1 from './variant-1.tsx?raw';
 import code2 from './variant-2.tsx?raw';
@@ -45,6 +47,8 @@ import code19 from './variant-19.tsx?raw';
 import code20 from './variant-20.tsx?raw';
 import code21 from './variant-21.tsx?raw';
 import code22 from './variant-22.tsx?raw';
+import code23 from './variant-23.tsx?raw';
+import code24 from './variant-24.tsx?raw';
 
 
 import type { UiVariant } from '@/data/components-registry';
@@ -203,7 +207,21 @@ export const variants: UiVariant[] = [
     component: Badge22,
     cli: 'npx shadcn@latest add badge',
     code: code22,
-  }
+  },
+  {
+    id: 'badge-23',
+    title: 'Badge 23',
+    component: Badge23,
+    cli: 'npx shadcn@latest add badge',
+    code: code23,
+  },
+  {
+    id: 'badge-24',
+    title: 'Badge 24',
+    component: Badge24,
+    cli: 'npx shadcn@latest add badge',
+    code: code24,
+  },
 ];
 
 export { category };
