@@ -5,7 +5,7 @@ const RadioGroup4 = () => {
   return (
     <RadioGroup
       defaultValue="starter"
-      className="theme-injected max-w-md space-y-3"
+      className=" max-w-md space-y-3"
     >
       <label
         htmlFor="starter"

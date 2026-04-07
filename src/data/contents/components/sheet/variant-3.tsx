@@ -26,7 +26,7 @@ const Sheet3 = () => {
         <Button variant="outline">Open Documentation</Button>
       </SheetTrigger>
 
-      <SheetContent className="theme-injected p-0 sm:max-w-[540px]">
+      <SheetContent className=" p-0 sm:max-w-[540px]">
         <ScrollArea className="h-full">
           <div className="space-y-6 p-6">
             <SheetHeader>
