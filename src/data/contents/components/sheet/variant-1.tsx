@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { Button } from '@/components/base-ui/button';
 import { Input } from '@/components/base-ui/input';
-import { Label } from '@/components/base-ui/label';
 import {
   Sheet,
   SheetClose,
