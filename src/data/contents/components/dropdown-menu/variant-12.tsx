@@ -41,7 +41,7 @@ const DropdownMenu12 = () => {
         </DropdownMenuTrigger>
 
         <DropdownMenuContent
-          className="bg-popover w-72 rounded-lg border p-1 shadow-md"
+          className="bg-popover sm:w-72  w-[220px] rounded-lg border p-1 shadow-md"
           align="end"
         >
           <DropdownMenuLabel className="flex items-center gap-3 rounded-lg p-1">
@@ -84,23 +84,23 @@ const DropdownMenu12 = () => {
             </DropdownMenuItem>
           </DropdownMenuGroup>
 
-          <DropdownMenuGroup>
+          <DropdownMenuGroup >
             <DropdownMenuSub>
-              <DropdownMenuSubTrigger className="group flex items-center gap-3 rounded-lg p-2">
+              <DropdownMenuSubTrigger className="group flex items-center gap-3 rounded-lg p-2" >
                 <FaShareNodes className="text-muted-foreground group-hover:text-foreground transition-all group-hover:scale-110" />
                 <span className="text-sm font-medium">Share Workspace</span>
               </DropdownMenuSubTrigger>
 
-              <DropdownMenuPortal>
-                <DropdownMenuSubContent className="bg-popover rounded-sm border p-1 shadow-md">
-                  <DropdownMenuItem className="flex items-center gap-3 rounded-sm p-1">
+              <DropdownMenuPortal >
+                <DropdownMenuSubContent className="bg-popover rounded-sm border p-1 shadow-md" >
+                  <DropdownMenuItem className="flex items-center gap-1 rounded-sm p-1">
                     <FaEnvelope />
-                    Invite via Email
+                     Email
                   </DropdownMenuItem>
 
-                  <DropdownMenuItem className="flex items-center gap-3 rounded-sm p-1">
+                  <DropdownMenuItem className="flex items-center gap-1 rounded-sm p-1">
                     <FaLink />
-                    Copy Invite Link
+                    Copy Link
                   </DropdownMenuItem>
                 </DropdownMenuSubContent>
               </DropdownMenuPortal>
@@ -111,7 +111,7 @@ const DropdownMenu12 = () => {
               <span className="text-sm font-medium">Help Center</span>
             </DropdownMenuItem>
 
-            <DropdownMenuItem className="group text-destructive flex items-center gap-3 rounded-lg p-2">
+            <DropdownMenuItem className="group text-destructive flex items-center gap-3 rounded-lg p-2 " variant='destructive'>
               <FaRightFromBracket className="transition-all group-hover:translate-x-1" />
               <span className="text-sm font-medium">Logout</span>
             </DropdownMenuItem>

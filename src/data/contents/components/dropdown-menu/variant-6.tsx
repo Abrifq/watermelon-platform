@@ -69,7 +69,7 @@ const DropdownMenu6 = () => {
           </Button>
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent className="bg-popover w-80 rounded-lg border p-2 shadow-md">
+        <DropdownMenuContent className="bg-popover w-80 rounded-lg border p-1 shadow-md" align='center'>
           <DropdownMenuLabel className="px-2 pb-1 text-sm font-semibold">
             Messages
           </DropdownMenuLabel>
@@ -80,8 +80,8 @@ const DropdownMenu6 = () => {
                 key={index}
                 className="group dark:hover:bg-muted/50! flex cursor-pointer items-center gap-3 rounded-lg p-2 transition-all"
               >
-                <Avatar className="h-9 w-9 transition-transform duration-200 group-hover:scale-105">
-                  <AvatarImage src={item.src} alt={item.name} />
+                <Avatar className="h-9 w-9 transition-transform duration-200 group-hover:scale-105 ">
+                  <AvatarImage src={item.src} alt={item.name}  />
                   <AvatarFallback className="text-xs">
                     {item.fallback}
                   </AvatarFallback>
@@ -102,7 +102,7 @@ const DropdownMenu6 = () => {
                   </span>
 
                   {item.newMessages && (
-                    <Badge className="h-5 min-w-5 rounded-md px-1 text-[10px]">
+                    <Badge className="h-5 min-w-5 rounded-sm px-1 text-[10px] text-white! ">
                       {item.newMessages}
                     </Badge>
                   )}

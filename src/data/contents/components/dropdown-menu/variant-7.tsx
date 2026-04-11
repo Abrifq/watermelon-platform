@@ -59,7 +59,7 @@ const DropdownMenu7 = () => {
           </Button>
         </DropdownMenuTrigger>
 
-        <DropdownMenuContent className="bg-popover w-80 rounded-lg border p-1 shadow-md">
+        <DropdownMenuContent className="bg-popover w-80 rounded-lg border p-1 shadow-md" align='center'>
           <DropdownMenuLabel className="px-2 pb-1 text-sm font-semibold">
             Team Members
           </DropdownMenuLabel>

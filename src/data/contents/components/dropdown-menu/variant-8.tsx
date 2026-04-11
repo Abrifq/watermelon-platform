@@ -58,7 +58,7 @@ const DropdownMenu8 = () => {
             );
           })}
 
-          <DropdownMenuItem className="group text-destructive focus:text-destructive mt-1 flex cursor-pointer items-center gap-3 rounded-lg px-2 py-1">
+          <DropdownMenuItem className="group text-destructive mt-1 flex cursor-pointer items-center gap-3 rounded-lg px-2 py-1" variant='destructive'>
             <FaRightFromBracket className="transition-all duration-200 group-hover:translate-x-1" />
             <span className="text-sm font-medium">Logout</span>
           </DropdownMenuItem>
