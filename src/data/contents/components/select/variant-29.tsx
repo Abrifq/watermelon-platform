@@ -34,25 +34,25 @@ const Select29 = () => {
         >
           <SelectItem value="draft" className="rounded-lg">
             <span className="flex items-center gap-2">
-              <IconCircle className="size-2 fill-zinc-400 text-zinc-400" />
+              <IconCircle className="size-2 fill-zinc-400 text-zinc-400 stroke-zinc-400" />
               Unpublished Draft
             </span>
           </SelectItem>
           <SelectItem value="active" className="rounded-lg">
             <span className="flex items-center gap-2">
-              <IconCircle className="size-2 fill-emerald-500 text-emerald-500" />
+              <IconCircle className="size-2 fill-emerald-500 text-emerald-500 stroke-emerald-500" />
               Live Deployment
             </span>
           </SelectItem>
           <SelectItem value="archived" className="rounded-lg">
             <span className="flex items-center gap-2">
-              <IconCircle className="size-2 fill-amber-500 text-amber-500" />
+              <IconCircle className="size-2 fill-amber-500 text-amber-500 stroke-amber-500" />
               Archived Record
             </span>
           </SelectItem>
           <SelectItem value="deprecated" className="rounded-lg">
             <span className="flex items-center gap-2">
-              <IconCircle className="size-2 fill-rose-500 text-rose-500" />
+              <IconCircle className="size-2 fill-rose-500 text-rose-500 stroke-rose-500" />
               Legacy System
             </span>
           </SelectItem>
